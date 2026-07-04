@@ -28,12 +28,16 @@ const About = () => {
             <p className="flex items-end text-5xl text-gray-500">
               CODE IS CRAFT
             </p>
-            <Card containerRef={grid2Container} style={{rotate: "75deg", top: "30%", left: "20%"}} text="GRASP"/>
+            <Card containerRef={grid2Container} style={{rotate: "10deg"}} image="assets/logos/blender.png"/>
+            <Card containerRef={grid2Container} style={{rotate: "75deg", top: "30%", left: "20%"}} text="FiveM"/>
             <Card containerRef={grid2Container} style={{rotate: "-30deg", top: "60%", left: "45%"}} text="JavaScript"/>
+            <Card containerRef={grid2Container} image="assets/logos/codewalker.jpg"/>
             <Card containerRef={grid2Container} style={{rotate: "90deg", bottom: "30%", left: "70%"}} text="React"/>
-            <Card containerRef={grid2Container} style={{rotate: "-45deg", top: "55%", left: "0%"}} text="Motion"/>
-            <Card containerRef={grid2Container} style={{rotate: "-45deg", top: "70%", left: "25%"}} image="assets/logos/csharp-pink.png"/>
-            <Card containerRef={grid2Container} style={{rotate: "30deg", top: "70%", left: "70%"}} image="assets/logos/dotnet-pink.png"/>
+            <Card containerRef={grid2Container} style={{rotate: "-45deg", top: "25%", left: "0%"}} text="Motion"/>
+            <Card containerRef={grid2Container} style={{rotate: "-35deg", top: "70%", right: "20%"}} image="assets/logos/fivem.png"/>
+            <Card containerRef={grid2Container} style={{rotate: "-35deg", top: "55%", left: "0%"}} text="Astro"/>
+            <Card containerRef={grid2Container} style={{rotate: "65deg", top: "5%", left: "50%"}} text="Tailwind"/>
+            <Card containerRef={grid2Container} style={{rotate: "30deg", top: "70%", left: "20%"}} image="assets/logos/dotnet-pink.png"/>
           </div>
         </div>
         {/* Grid 3 */}

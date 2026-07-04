@@ -1,5 +1,5 @@
 import { Float, OrbitControls } from '@react-three/drei'
-import { Astronaut } from '../components/Astronaut'
+import { Bot } from '../components/Bot'
 import HeroText from '../components/HeroText'
 import ParallaxBackground from '../components/ParallaxBackground'
 import { Canvas, useFrame } from '@react-three/fiber'
@@ -20,9 +20,12 @@ const Hero = () => {
                 style={{ width: "100vw",  height: "100vh"}}
             >
                 <Canvas camera={{position:[0, 1, 3 ]}}>
+                    <ambientLight intensity={1.5} />
+                    <directionalLight position={[5, 5, 5]} intensity={2} />
+                    <directionalLight position={[-5, 3, -5]} intensity={0.8} color="#a0c4ff" />
                     <Suspense fallback={<Loader />}>
                         <Float>
-                            <Astronaut
+                            <Bot
                                 scale={isMobile ? 0.3 : undefined}
                                 position={isMobile ? [0, -1.5, 0] : [2, -1, 0]}
                             />
